@@ -44,7 +44,7 @@ h2 {
     color: #e76f51;
     margin-bottom: 1rem;
     border-bottom: 3px solid #f4a261;
-    display: fit-content;
+    width: fit-content;
 }
 
 p {
