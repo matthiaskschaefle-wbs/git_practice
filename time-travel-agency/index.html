@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Travel Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Chrono Voyages</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Destinations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Your next trip is 3,000 years ago</h1>
+        <p>Safe, comfortable and paradox-free journeys through history.</p>
+        <a href="#contact" class="button">Book your journey</a>
+      </section>
+
+      <section id="services" class="services">
+        <h2>Destinations</h2>
+        <ul class="service-list">
+          <li class="service-card">
+            <img src="https://picsum.photos/id/1040/600/400" alt="Ancient stone castle on a hill" />
+            <h3>Ancient Egypt</h3>
+            <p>Watch the pyramids being built. Sunscreen included.</p>
+          </li>
+          <li class="service-card">
+            <img src="https://picsum.photos/id/1047/600/400" alt="Old city street with historic buildings" />
+            <h3>Renaissance Florence</h3>
+            <p>Have coffee with Leonardo. Bring your sketchbook.</p>
+          </li>
+          <li class="service-card">
+            <img src="https://picsum.photos/id/1067/600/400" alt="Modern city skyline at night" />
+            <h3>Year 3000</h3>
+            <p>Flying cars, robot butlers and no traffic jams.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <h2>Travel memories</h2>
+        <div class="gallery-grid">
+          <img src="https://picsum.photos/id/1015/600" alt="River valley between mountains" />
+          <img src="https://picsum.photos/id/1016/600" alt="Rocky canyon landscape" />
+          <img src="https://picsum.photos/id/1018/600" alt="Green mountains under a blue sky" />
+          <img src="https://picsum.photos/id/1019/600" alt="Calm lake at sunrise" />
+          <img src="https://picsum.photos/id/1035/600" alt="Waterfall in a forest" />
+          <img src="https://picsum.photos/id/1036/600" alt="Snowy mountain peak" />
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Book your journey</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="era">Destination</label>
+          <select id="era" name="era">
+            <option>Ancient Egypt</option>
+            <option>Renaissance Florence</option>
+            <option>Year 3000</option>
+          </select>
+
+          <button type="submit">Send request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Chrono Voyages</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Imprint</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
