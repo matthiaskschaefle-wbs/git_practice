@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=Mona+Sans:wdth,wght@75..125,200..900&display=swap"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <a href="#" class="logo">Chrono Voyages</a>
+    <header class="site-header">
+      <a href="#" class="brand">chrono.</a>
       <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="#services">Destinations</a></li>
+        <ul class="nav-links">
+          <li><a href="#destinations">Destinations</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -20,67 +26,97 @@
 
     <main>
       <section class="hero">
-        <h1>Your next trip is 3,000 years ago</h1>
-        <p>Safe, comfortable and paradox-free journeys through history.</p>
-        <a href="#contact" class="button">Book your journey</a>
+        <p class="eyebrow">Time Travel Agency</p>
+        <h1 class="hero-title">
+          <!-- Two-tone title: gray lead line, bold main line -->
+          <span class="hero-title__lead">Your next trip is</span>
+          3,000 years ago.
+        </h1>
+        <p class="hero-text">
+          Safe, comfortable and paradox-free journeys through history. Pick an
+          era, pack light, and be back before dinner.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Book your journey</a>
+          <a href="#destinations" class="btn btn--secondary btn--lg">See destinations</a>
+        </div>
       </section>
 
-      <section id="services" class="services">
-        <h2>Destinations</h2>
-        <ul class="service-list">
-          <li class="service-card">
+      <section id="destinations" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Destinations</h2>
+          <p class="meta">Three eras, one return ticket</p>
+        </div>
+        <ul class="destinations">
+          <li class="card destination">
             <img src="https://picsum.photos/id/1040/600/400" alt="Ancient stone castle on a hill" />
-            <h3>Ancient Egypt</h3>
+            <span class="tag">2560 BC</span>
+            <h3 class="card-title">Ancient Egypt</h3>
             <p>Watch the pyramids being built. Sunscreen included.</p>
           </li>
-          <li class="service-card">
+          <li class="card destination">
             <img src="https://picsum.photos/id/1047/600/400" alt="Old city street with historic buildings" />
-            <h3>Renaissance Florence</h3>
+            <span class="tag">1503</span>
+            <h3 class="card-title">Renaissance Florence</h3>
             <p>Have coffee with Leonardo. Bring your sketchbook.</p>
           </li>
-          <li class="service-card">
+          <li class="card destination">
             <img src="https://picsum.photos/id/1067/600/400" alt="Modern city skyline at night" />
-            <h3>Year 3000</h3>
+            <span class="tag">3000</span>
+            <h3 class="card-title">The Far Future</h3>
             <p>Flying cars, robot butlers and no traffic jams.</p>
           </li>
         </ul>
       </section>
 
-      <section id="gallery" class="gallery">
-        <h2>Travel memories</h2>
-        <div class="gallery-grid">
-          <img src="https://picsum.photos/id/1015/600" alt="River valley between mountains" />
+      <section id="gallery" class="section">
+        <div class="section-head">
+          <h2 class="section-title">Travel memories</h2>
+          <p class="meta">Photos from our guests</p>
+        </div>
+        <!-- Layout-only wrapper: no semantic tag fits, so a div is fine here -->
+        <div class="gallery">
+          <img src="https://picsum.photos/id/1015/800" alt="River valley between mountains" />
           <img src="https://picsum.photos/id/1016/600" alt="Rocky canyon landscape" />
           <img src="https://picsum.photos/id/1018/600" alt="Green mountains under a blue sky" />
-          <img src="https://picsum.photos/id/1019/600" alt="Calm lake at sunrise" />
+          <img src="https://picsum.photos/id/1019/600" alt="Calm sea under a cloudy sky" />
           <img src="https://picsum.photos/id/1035/600" alt="Waterfall in a forest" />
-          <img src="https://picsum.photos/id/1036/600" alt="Snowy mountain peak" />
+          <img src="https://picsum.photos/id/1036/600" alt="Snowy mountain landscape" />
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <h2>Book your journey</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+      <section id="contact" class="section contact">
+        <div class="contact-intro">
+          <h2 class="section-title">Book your journey</h2>
+          <p class="meta">We answer within one business day. In your timeline.</p>
+        </div>
+        <form class="card form">
+          <label class="field" for="name">
+            Name
+            <input class="input" type="text" id="name" name="name" required />
+          </label>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <label class="field" for="email">
+            Email
+            <input class="input" type="email" id="email" name="email" required />
+          </label>
 
-          <label for="era">Destination</label>
-          <select id="era" name="era">
-            <option>Ancient Egypt</option>
-            <option>Renaissance Florence</option>
-            <option>Year 3000</option>
-          </select>
+          <label class="field" for="era">
+            Destination
+            <select class="input" id="era" name="era">
+              <option>Ancient Egypt</option>
+              <option>Renaissance Florence</option>
+              <option>The Far Future</option>
+            </select>
+          </label>
 
-          <button type="submit">Send request</button>
+          <button type="submit" class="btn btn--primary btn--lg">Send request</button>
         </form>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Chrono Voyages</p>
+    <footer class="site-footer">
+      <p class="meta">&copy; 2026 chrono. Time Travel Agency</p>
       <ul class="footer-links">
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Imprint</a></li>
