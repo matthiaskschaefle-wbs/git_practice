@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadoo - Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Assets from Figma file-->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-ink: #181e4b;
+            --color-body: #5e6282;
+            --color-dark: #212832;
+            --color-coral: #df6951;
+            --color-gold: #f1a501;
+            --color-teal: #006380;
+            --color-lilac: #dfd7f9;
+            --font-sans: "Poppins", sans-serif;
+            --font-display: "Volkhov", serif;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-body bg-white">
+
+    <header class="relative z-10 max-w-6xl mx-auto px-6 pt-8 flex items-center justify-between">
+        <a href="#">
+            <img src="images/logo.svg" alt="Jadoo" width="115" height="34">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="flex items-center gap-6 lg:gap-12 font-medium text-dark">
+                <li class="hidden md:block"><a href="#destinations" class="hover:text-coral">Destinations</a></li>
+                <li class="hidden md:block"><a href="#" class="hover:text-coral">Hotels</a></li>
+                <li class="hidden md:block"><a href="#" class="hover:text-coral">Flights</a></li>
+                <li class="hidden md:block"><a href="#booking" class="hover:text-coral">Bookings</a></li>
+                <li class="hidden md:block"><a href="#" class="hover:text-coral">Login</a></li>
+                <li><a href="#" class="border border-dark rounded-md px-5 py-2 hover:border-coral hover:text-coral">Sign
+                        up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="relative overflow-hidden">            
+            <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 items-center gap-8">
+                <article>
+                    <p class="text-coral font-bold uppercase md:text-xl">Best destinations around the world</p>
+                    <h1
+                        class="font-display font-bold text-ink text-5xl lg:text-7xl leading-tight tracking-tight mt-4">
+                        Travel, <span
+                            class="bg-[url(images/underline.svg)] bg-no-repeat bg-bottom bg-[length:100%_12px]">enjoy</span>
+                        and live a new and full life
+                    </h1>
+                    <p class="font-medium leading-loose max-w-md mt-6">
+                        Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+                        engrossed listening. Park gate sell they west hard for the.
+                    </p>
+                    <p class="flex flex-wrap items-center gap-8 mt-8">
+                        <a href="#destinations"
+                            class="bg-gold text-white font-medium rounded-lg px-7 py-4 shadow-lg shadow-gold/30 hover:-translate-y-0.5 transition">Find
+                            out more</a>
+                        <a href="#" class="flex items-center gap-5 font-medium text-[#686d77]">
+                            <span
+                                class="grid place-items-center size-13 rounded-full bg-coral text-white shadow-lg shadow-coral/40">▶</span>
+                            Play Demo
+                        </a>
+                    </p>
+                </article>
+                <figure class="relative isolate">
+                    <img src="images/hero-shape.svg" alt="" class="absolute inset-0 -z-10 w-full h-full object-contain scale-110">
+                    <img src="images/plane.svg" alt="" width="128" height="70" class="absolute top-8 left-0 -rotate-45 hidden lg:block">
+                    <img src="images/traveller.png" alt="Traveller sitting on a suitcase" class="w-full">
+                    <img src="images/plane.svg" alt="" width="128" height="70" class="absolute top-20 right-0 -rotate-45 hidden lg:block">
+                </figure>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+            <p class="font-semibold text-lg">CATEGORY</p>
+            <h2 class="font-display font-bold text-ink text-4xl md:text-5xl mt-2">We Offer Best Services</h2>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
+                <li class="rounded-4xl px-8 py-7 hover:bg-white hover:shadow-2xl hover:-translate-y-1 transition">
+                    <img src="images/icon-weather.svg" alt="" class="h-20 mx-auto">
+                    <h3 class="text-xl font-semibold text-[#1e1d4c] mt-4">Calculated Weather</h3>
+                    <p class="font-medium mt-3">Built Wicket longer admire do barton vanity itself do in it.</p>
+                </li>
+                <li class="rounded-4xl px-8 py-7 hover:bg-white hover:shadow-2xl hover:-translate-y-1 transition">
+                    <img src="images/plane.svg" alt="" class="h-20 mx-auto -rotate-12">
+                    <h3 class="text-xl font-semibold text-[#1e1d4c] mt-4">Best Flights</h3>
+                    <p class="font-medium mt-3">Engrossed listening. Park gate sell they west hard for the.</p>
+                </li>
+                <li class="rounded-4xl px-8 py-7 hover:bg-white hover:shadow-2xl hover:-translate-y-1 transition">
+                    <img src="images/icon-events.png" alt="" class="h-20 mx-auto">
+                    <h3 class="text-xl font-semibold text-[#1e1d4c] mt-4">Local Events</h3>
+                    <p class="font-medium mt-3">Barton vanity itself do in it. Preferd to men it engrossed listening.
+                    </p>
+                </li>
+                <li class="rounded-4xl px-8 py-7 hover:bg-white hover:shadow-2xl hover:-translate-y-1 transition">
+                    <img src="images/icon-customization.svg" alt="" class="h-20 mx-auto p-3">
+                    <h3 class="text-xl font-semibold text-[#1e1d4c] mt-4">Customization</h3>
+                    <p class="font-medium mt-3">We deliver outsourced aviation services for military customers</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="destinations" class="max-w-6xl mx-auto px-6 py-20 text-center">
+            <p class="font-semibold text-lg">Top Selling</p>
+            <h2 class="font-display font-bold text-ink text-4xl md:text-5xl mt-2">Top Destinations</h2>
+            <ul class="grid md:grid-cols-3 gap-9 mt-16 text-left">
+                <li class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition">
+                    <img src="images/rome.png" alt="Rome, Italy" class="w-full h-80 object-cover">
+                    <article class="p-6 font-medium">
+                        <h3 class="flex justify-between text-lg"><span>Rome, Italy</span><span>$5.42k</span></h3>
+                        <p class="flex items-center gap-3 mt-4"><img src="images/icon-pin.svg" alt="" width="16"
+                                height="16">10 Days Trip</p>
+                    </article>
+                </li>
+                <li class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition">
+                    <img src="images/london.png" alt="London, UK" class="w-full h-80 object-cover">
+                    <article class="p-6 font-medium">
+                        <h3 class="flex justify-between text-lg"><span>London, UK</span><span>$4.2k</span></h3>
+                        <p class="flex items-center gap-3 mt-4"><img src="images/icon-pin.svg" alt="" width="16"
+                                height="16">12 Days Trip</p>
+                    </article>
+                </li>
+                <li class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition">
+                    <img src="images/europe.png" alt="Full Europe" class="w-full h-80 object-cover">
+                    <article class="p-6 font-medium">
+                        <h3 class="flex justify-between text-lg"><span>Full Europe</span><span>$15k</span></h3>
+                        <p class="flex items-center gap-3 mt-4"><img src="images/icon-pin.svg" alt="" width="16"
+                                height="16">28 Days Trip</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section id="booking" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+            <article>
+                <p class="font-semibold text-lg">Easy and Fast</p>
+                <h2 class="font-display font-bold text-ink text-4xl md:text-5xl mt-2">Book your next trip in 3 easy
+                    steps</h2>
+                <ol class="space-y-10 mt-10">
+                    <li class="flex gap-5">
+                        <span class="grid place-items-center shrink-0 size-12 rounded-xl bg-gold"><img
+                                src="images/step-destination.svg" alt="" width="22" height="22"></span>
+                        <p><strong class="block font-bold">Choose Destination</strong>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Urna, tortor tempus.</p>
+                    </li>
+                    <li class="flex gap-5">
+                        <span class="grid place-items-center shrink-0 size-12 rounded-xl bg-coral"><img
+                                src="images/step-payment.svg" alt="" width="22" height="18"></span>
+                        <p><strong class="block font-bold">Make Payment</strong>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Urna, tortor tempus.</p>
+                    </li>
+                    <li class="flex gap-5">
+                        <span class="grid place-items-center shrink-0 size-12 rounded-xl bg-teal"><img
+                                src="images/step-taxi.svg" alt="" width="22" height="19"></span>
+                        <p><strong class="block font-bold">Reach Airport on Selected Date</strong>Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                    </li>
+                </ol>
+            </article>
+
+            <aside class="relative pb-24">
+                <article class="bg-white rounded-3xl shadow-2xl p-6 max-w-sm">
+                    <img src="images/greece.png" alt="Santorini, Greece" class="w-full h-40 object-cover rounded-3xl">
+                    <h3 class="text-lg font-medium text-black mt-5">Trip To Greece</h3>
+                    <p class="mt-2">14-29 June | by Robbin Joseph</p>
+                    <p class="mt-6">24 people going</p>
+                </article>
+                <article class="absolute bottom-0 right-0 flex gap-3 bg-white rounded-2xl shadow-2xl p-4 w-64">
+                    <img src="images/rome-avatar.png" alt="" class="size-12 rounded-full object-cover">
+                    <p class="text-sm">Ongoing
+                        <strong class="block text-lg font-medium text-black">Trip to Rome</strong>
+                        <span class="text-[#8a79df]">40%</span> completed
+                        <progress value="40" max="100" class="block w-full h-1.5 mt-2 accent-[#8a79df]">40%</progress>
+                    </p>
+                </article>
+            </aside>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+            <header>
+                <p class="font-semibold text-lg">TESTIMONIALS</p>
+                <h2 class="font-display font-bold text-ink text-4xl md:text-5xl mt-2">What People Say About Us.</h2>
+            </header>
+            <figure class="relative pt-8 pl-8">
+                <img src="images/mike-taylor.png" alt="Mike Taylor" class="absolute top-0 left-0 size-17 rounded-full">
+                <blockquote class="bg-white rounded-xl shadow-2xl p-9 leading-loose">
+                    "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew
+                    next. Of believed or diverted no."
+                    <footer class="mt-6">
+                        <cite class="not-italic block font-semibold text-lg">Mike Taylor</cite>
+                        <span class="text-sm">Lahore, Pakistan</span>
+                    </footer>
+                </blockquote>
+            </figure>
+        </section>
+
+        <section aria-label="Travel partners" class="max-w-6xl mx-auto px-6 py-16">
+            <ul class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+                <li><img src="images/logo-axon.png" alt="Axon Airlines"
+                        class="h-24 mx-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition">
+                </li>
+                <li><img src="images/logo-jetstar.png" alt="Jetstar"
+                        class="h-24 mx-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition">
+                </li>
+                <li><img src="images/logo-expedia.png" alt="Expedia"
+                        class="h-24 mx-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition">
+                </li>
+                <li><img src="images/logo-qantas.png" alt="Qantas"
+                        class="h-14 mx-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition">
+                </li>
+                <li><img src="images/logo-alitalia.png" alt="Alitalia"
+                        class="h-14 mx-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition">
+                </li>
+            </ul>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-6 py-16">
+            <article class="relative bg-lilac/50 rounded-[20px] rounded-tl-[129px] px-6 md:px-24 py-20 text-center">
+                <img src="images/icon-send.svg" alt="" width="70" height="70" class="absolute -top-4 -right-4">
+                <h2 class="text-2xl md:text-3xl font-semibold leading-relaxed">
+                    Subscribe to get information, latest news and other interesting offers about Jadoo
+                </h2>
+                <form class="flex flex-col md:flex-row justify-center gap-6 mt-12">
+                    <label class="flex items-center gap-3 bg-white rounded-lg px-6 md:w-96">
+                        <img src="images/icon-mail.svg" alt="" width="21" height="18">
+                        <input type="email" placeholder="Your email" required class="w-full py-5 outline-none">
+                    </label>
+                    <button type="submit"
+                        class="bg-[#ff7d68] text-white font-semibold rounded-lg px-12 py-5 shadow-lg shadow-[#ff7d68]/30 hover:-translate-y-0.5 transition cursor-pointer">Subscribe</button>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-6 pt-24 pb-10">
+        <nav aria-label="Footer" class="grid grid-cols-2 md:grid-cols-5 gap-10">
+            <section class="col-span-2 md:col-span-1">
+                <h2 class="text-4xl font-medium text-ink">Jadoo.</h2>
+                <p class="text-sm font-medium mt-4">Book your trip in minute, get full control for much longer.</p>
+            </section>
+            <section>
+                <h3 class="text-xl font-bold text-black mb-4">Company</h3>
+                <ul class="space-y-3 font-medium">
+                    <li><a href="#" class="hover:text-coral">About</a></li>
+                    <li><a href="#" class="hover:text-coral">Careers</a></li>
+                    <li><a href="#" class="hover:text-coral">Mobile</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="text-xl font-bold text-black mb-4">Contact</h3>
+                <ul class="space-y-3 font-medium">
+                    <li><a href="#" class="hover:text-coral">Help/FAQ</a></li>
+                    <li><a href="#" class="hover:text-coral">Press</a></li>
+                    <li><a href="#" class="hover:text-coral">Affiliates</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="text-xl font-bold text-black mb-4">More</h3>
+                <ul class="space-y-3 font-medium">
+                    <li><a href="#" class="hover:text-coral">Airline fees</a></li>
+                    <li><a href="#" class="hover:text-coral">Airline</a></li>
+                    <li><a href="#" class="hover:text-coral">Low fare tips</a></li>
+                </ul>
+            </section>
+            <section class="col-span-2 md:col-span-1">
+                <ul class="flex gap-4">
+                    <li><a href="#" aria-label="Facebook"
+                            class="grid place-items-center size-11 rounded-full bg-white shadow-md hover:-translate-y-0.5 transition"><img
+                                src="images/icon-facebook.svg" alt="" width="24" height="24"></a></li>
+                    <li><a href="#" aria-label="Twitter"
+                            class="grid place-items-center size-11 rounded-full bg-white shadow-md hover:-translate-y-0.5 transition"><img
+                                src="images/icon-twitter.svg" alt="" width="24" height="24"></a></li>
+                </ul>
+                <p class="text-lg font-medium mt-6 mb-3">Discover our app</p>
+                <p class="flex gap-2 text-xs whitespace-nowrap">
+                    <a href="#" class="bg-black text-white rounded-full px-4 py-2">Google Play</a>
+                    <a href="#" class="bg-black text-white rounded-full px-4 py-2">App Store</a>
+                </p>
+            </section>
+        </nav>
+        <p class="text-center text-sm font-medium mt-14">All rights reserved @jadoo.co</p>
+    </footer>
+
+</body>
+
+</html>
